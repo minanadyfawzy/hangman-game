@@ -88,7 +88,7 @@ newinput.addEventListener("keydown", e => {
     let letter = lowerleter.toLowerCase();
     console.log(e.key);
     if (guessedLetters.includes(letter)) {
-        return; // already guessed → ignore
+        console.log("not in the array");
     } else {
         for (let index = 0; index < therandomwordlength; index++) {
             if (therandomword[index] === letter) {
