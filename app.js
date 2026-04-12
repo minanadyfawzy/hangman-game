@@ -88,7 +88,7 @@ newinput.addEventListener("keydown", e => {
     let letter = lowerleter.toLowerCase();
     console.log(e.key);
     if (guessedLetters.includes(letter)) {
-        console.log("not in the array");
+        return; 
     } else {
         for (let index = 0; index < therandomwordlength; index++) {
             if (therandomword[index] === letter) {
@@ -107,7 +107,7 @@ newinput.addEventListener("keydown", e => {
         newinput.disabled = true;
     }
     if (!guessedLetters.includes(letter)) {
-        if (letter === "Backspace" || letter === "Enter" || letter === "Shift" || letter === "CapsLock" || letter === "Control" || letter === "Alt" || (letter === " ") || (letter === ",")) {
+        if (lowerleter === "Backspace" || (lowerleter === "Enter") || (lowerleter === "Shift") || (lowerleter === "CapsLock") || (lowerleter === "Control") || (lowerleter === "Alt") || (lowerleter === " ") || (lowerleter === ",")) {
             console.log("enetr letter");
         } else {
             wrongattemps++;
