@@ -107,7 +107,7 @@ newinput.addEventListener("keydown", e => {
         newinput.disabled = true;
     }
     if (!guessedLetters.includes(letter)) {
-        if (lowerleter === "Backspace" || lowerleter === "Enter" || lowerleter === "Shift" || lowerleter === "CapsLock" || lowerleter === "Control" || lowerleter === "Alt" || (lowerleter === " ") || (lowerleter === ",")) {
+        if (letter === "Backspace" || letter === "Enter" || letter === "Shift" || letter === "CapsLock" || letter === "Control" || letter === "Alt" || (letter === " ") || (letter === ",")) {
             console.log("enetr letter");
         } else {
             wrongattemps++;
